@@ -1,9 +1,11 @@
-
+import { Banner } from "@/sections/Banner";
+import { Navbar } from "@/sections/Navbar";
 
 export default function Home() {
   return (
     <div>
-      Hi There
+      <Banner />
+      <Navbar />
     </div>
   );
 }
