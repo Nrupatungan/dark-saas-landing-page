@@ -14,13 +14,16 @@
     "dash": true
   },
   "dependencies": {
+    "motion": "^12.6.3",
     "next": "14.2.23",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tailwind-merge": "^3.1.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250403.0",
     "@opennextjs/cloudflare": "0.5.3",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "22.9.1",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
