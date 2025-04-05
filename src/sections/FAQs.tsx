@@ -1,3 +1,6 @@
+import PlusIcon from '@/assets/icons/plus.svg'
+import AccordionItem from '@/components/AccordionItem';
+
 const items = [
   {
     question: "What payment methods do you accept?",
@@ -23,7 +26,16 @@ const items = [
 
 export const FAQs = () => {
   return (
-    <div>FAQs</div>
+    <section className="py-[72px] md:py-24 bg-black text-white bg-[linear-gradient(to_bottom,#5D2CA8,#000)]">
+      <div className="container">
+        <h2 className="text-5xl md:text-6xl font-bold text-center tracking-tighter max-w-2xl mx-auto">Frequently asked questions</h2>
+        <div className="mt-12 max-w-2xl mx-auto">
+          {items.map((item, idx) => (
+            <AccordionItem key={idx} question={item.question} answer={item.answer} />
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
