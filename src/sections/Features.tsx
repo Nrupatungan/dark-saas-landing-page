@@ -1,3 +1,5 @@
+import EcosystemIcon from '@/assets/icons/ecosystem.svg'
+
 const features = [
   {
     title: "Integration Ecosystem",
@@ -18,7 +20,23 @@ const features = [
 
 export const Features = () => {
   return (
-    <div>Features</div>
+    <section className="py-[72] md:py-24 bg-black text-white">
+      <div className="container">
+        <h2 className="text-5xl md:text-6xl font-bold text-center tracking-tighter">Everything you need</h2>
+        <p className="text-xl text-white/70 text-center mt-5 max-w-xl mx-auto">Enjoy customizable lists, team work tools, and smart tracking all in one place. Set tasks, get reminders, and see your progress simply and quickly.</p>
+        <div className="mt-16 flex flex-col md:flex-row gap-4 justify-center items-center">
+          {features.map((feature, idx) => (
+            <div key={idx} className="py-10 px-5 max-w-[343px] text-center rounded-xl border border-white/30">
+              <div className='bg-white size-14 inline-flex items-center justify-center rounded-lg'>
+                <EcosystemIcon className='text-black'/>
+              </div>
+              <h3 className='mt-6 font-bold'>{feature.title}</h3>
+              <p className='mt-2 text-white/70'>{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
