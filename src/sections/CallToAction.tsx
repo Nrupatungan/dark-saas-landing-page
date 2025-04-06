@@ -20,7 +20,7 @@ export const CallToAction = () => {
   return (
     <section className="py-[72px] md:py-24 bg-black text-white overflow-clip" ref={sectionRef}>
       <div className="container max-w-xl md:px-0 relative">
-        <motion.div className="absolute -top-[120px] right-[calc(100%+24px)]" style={{
+        <motion.div className="absolute -top-[120px] right-[calc(100%+24px)] max-md:hidden" style={{
           translateY
         }}
         drag
@@ -32,7 +32,7 @@ export const CallToAction = () => {
           />
         </motion.div>
 
-        <motion.div className="absolute top-6 left-[calc(100%+36px)]" style={{
+        <motion.div className="absolute top-6 left-[calc(100%+36px)] max-md:hidden" style={{
           translateY
         }}
         drag
