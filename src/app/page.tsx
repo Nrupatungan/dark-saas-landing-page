@@ -1,4 +1,5 @@
 import { Banner } from "@/sections/Banner";
+import { CallToAction } from "@/sections/CallToAction";
 import { FAQs } from "@/sections/FAQs";
 import { Features } from "@/sections/Features";
 import { Hero } from "@/sections/Hero";
@@ -8,7 +9,7 @@ import { ProductShowcase } from "@/sections/ProductShowcase";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <Navbar />
       <Hero />
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <ProductShowcase />
       <FAQs />
-    </div>
+      <CallToAction />
+    </>
   );
 }
