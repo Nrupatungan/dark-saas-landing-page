@@ -1,4 +1,5 @@
 import EcosystemIcon from '@/assets/icons/ecosystem.svg'
+import Feature from '@/components/Feature';
 import SectionHeader from '@/components/SectionHeader';
 
 const features = [
@@ -26,13 +27,7 @@ export const Features = () => {
         <SectionHeader title='Everything you need' description='Enjoy customizable lists, team work tools, and smart tracking all in one place. Set tasks, get reminders, and see your progress simply and quickly.' />
         <div className="mt-16 flex flex-col md:flex-row gap-4 justify-center items-center">
           {features.map((feature, idx) => (
-            <div key={idx} className="py-10 px-5 max-w-[343px] text-center rounded-xl border border-white/30">
-              <div className='bg-white size-14 inline-flex items-center justify-center rounded-lg'>
-                <EcosystemIcon className='text-black'/>
-              </div>
-              <h3 className='mt-6 font-bold'>{feature.title}</h3>
-              <p className='mt-2 text-white/70'>{feature.description}</p>
-            </div>
+            <Feature key={idx} title={feature.title} description={feature.description} />
           ))}
         </div>
       </div>
