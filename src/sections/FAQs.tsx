@@ -1,4 +1,3 @@
-import PlusIcon from '@/assets/icons/plus.svg'
 import AccordionItem from '@/components/AccordionItem';
 
 const items = [
